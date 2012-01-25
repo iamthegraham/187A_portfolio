@@ -2,7 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>A Generic Page</title>
+    <title>RGL Portfolio</title>
+	<style type="text/css">
+		html, body {height:100%; margin:0; padding:0;}
+		#page-background {position:fixed; top:0; left:0; width:100%; height:100%;}
+		#content {position:relative; z-index:1; padding:10px;}
+		
+		#footer {
+		position:absolute;
+		bottom:0px;
+		width:100%;
+		}
+		#content { 
+		margin-bottom: 5em; }
+
+	</style>
     <meta name="description" content="something good should go here">
     <meta name="author" content="your name should go here">
 
@@ -29,34 +43,39 @@
     <!-- Your Javascripts -->
     <script src="javascripts/main.js"></script>
 
+	
   </head>
 
   <body>
-    <div class="container">
+	<div id="page-background"><img id="bg_jpg" src="images/bg.jpg" width="100%" height="bg_jpg.width" alt="background not found"></div>
+	<div id="wrap">
+	<div id="content">
 
       <div class="row">
 
-        <div class="span2">
-          PUT
+        <div class="span5">
+          <p align="center">LOGO</p>
         </div>
 
-        <div class="span2">
-          STUFF
+        <div class="span3 btn danger">
+           <p align="center">HOME</p>
         </div>
 
-        <div class="span2">
-          HERE
+        <div class="span3 btn disabled">
+           <p align="center">CONTACT</p>
         </div>
-
-        <div class="span10">
-          <h2>Example Image Gallery</h2>
-          <a class="fancybox" href="images/187.jpg" data-fancybox-group="gallery" title="COGS 187"><img src="images/187.jpg" alt="COGS187" /></a>
-          <a class="fancybox" href="images/187.jpg" data-fancybox-group="gallery" title="COGS 187"><img src="images/187.jpg" alt="COGS187" /></a>
-        </div>
+		
+		<div class="span3 btn">
+			<p align="center">WHO AM I?</p>		
+		</div>
 
       </div> <!-- end row -->
-
-    </div> <!-- end container -->
-
+	 
+	</div> <!-- end content -->
+	</div> <!-- end wrap -->
+	<div align="center" id="footer"> 
+	<a class="fancybox" href="images/187.jpg" data-fancybox-group="gallery" title="COGS 187"><img src="images/187.jpg" alt="COGS187" /></a>
+    <a class="fancybox" href="images/187.jpg" data-fancybox-group="gallery" title="COGS 187"><img src="images/187.jpg" alt="COGS187" /></a>	
+	</div>
   </body>
 </html>
